@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.nav {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.item {
+    font-size: 23px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline;
+    color: rebeccapurple;
+}
+
+.navig {
+    padding-left: 10px;
+    font-size: medium;
+    color: green;
+}
+
+.captn {
+    font-size: 15px;
+    color: green;
+}
+
+.icon {
+    font-size: medium;
+}
+
+.section {
+    border: 2px solid black;
+}

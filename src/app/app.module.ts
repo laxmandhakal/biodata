@@ -1,18 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
+import { FormsModule } from '@angular/forms';
+//import { CommonModule } from '@angular/common';
+import { BrowserModule} from "@angular/platform-browser"
+import { blogRoute } from './app-routing.module';
+import { PhotosComponent } from './photos/photos.component'
+import {BlogComponent} from './resume/blog.component'
+import { HomeComponent } from './home/home.component'
+import { IntroComponent } from './contact/intro.component'
+import {ToastrModule} from 'ngx-toastr'
+import {AppComponent} from './app.component'
+import { requests } from './contact/services/service';
+import { HttpClientModule } from '@angular/common/http';
+import { MsgService } from './contact/services/msg.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [HomeComponent,IntroComponent,PhotosComponent,BlogComponent,AppComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+   FormsModule,blogRoute,BrowserModule,ToastrModule.forRoot(),HttpClientModule,BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap:[AppComponent],
+  providers:[requests,MsgService]
+  
 })
 export class AppModule { }

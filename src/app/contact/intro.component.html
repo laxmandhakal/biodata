@@ -1,0 +1,16 @@
+<form class="form-group" #myform="ngForm">
+    <b> <div style="color: blue;">Email me. All fields are required below</div></b>
+    <input class="form-control" type="text" name="from" placeholder="your Name" #names="ngModel" [(ngModel)]="user.from" required>
+    <input type="text" class="form-control" name="email" placeholder="email" #emails="ngModel" [(ngModel)]="user.email" required>
+    <!-- <div class="danger" *ngIf="emails.errors && emails.dirty">
+        <div *ngIf="emails.errors.required">
+            required field*
+        </div>
+        <div *ngIf="emails.errors.email">
+            not a valid email
+        </div>
+    </div> -->
+    <textarea cols="60" rows="6" required class="form-control" name="message" placeholder="message" #messages="ngModel" [(ngModel)]="user.message">
+    </textarea>
+    <button [disabled]="!myform.valid" class="btn btn-success" (click)="submit();myform.reset() ">mail</button>
+</form>

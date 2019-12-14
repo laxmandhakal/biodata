@@ -1,0 +1,18 @@
+img {
+    height: 55vh;
+    width: 98%;
+}
+
+.span {
+    text-align: center;
+    color: darkmagenta;
+    font-size: 1.5em;
+}
+
+.about {
+    text-indent: 15px;
+    margin: 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
