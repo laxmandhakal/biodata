@@ -31,7 +31,7 @@ const routeblog:Routes = [{
 
 ]
 @NgModule({
-   imports:[RouterModule.forRoot(routeblog)] ,
+   imports:[RouterModule.forRoot(routeblog,{useHash:true})] ,
    exports:[RouterModule]
 })
 export class blogRoute{
