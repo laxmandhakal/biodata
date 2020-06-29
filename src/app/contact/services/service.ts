@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core'
 import {observable} from 'rxjs'
 @Injectable()
 export class requests{
-    url:string="https://appprivate-api.herokuapp.com:8080/api/mail"
+    url:string="https://appprivate-api.herokuapp.com/api/mail"
 constructor(public http:HttpClient,
     
     )
