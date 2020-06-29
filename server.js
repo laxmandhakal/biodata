@@ -10,4 +10,4 @@ app.use(express.static(__dirname + '/dist/private-app'));
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname + '/dist/private-app/index.html'));
 });
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 8080);
